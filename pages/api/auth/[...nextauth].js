@@ -43,7 +43,7 @@ export default NextAuth({
   },
   callbacks: {
     async jwt({ token, account, user }) {
-      // Initil Sign In
+      //If you sign in correctly (initial sign in) you get an account/user variable.
       if (account && user) {
         return {
           ...token,
